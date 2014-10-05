@@ -1,7 +1,7 @@
 {
   "name": "lomadee-offer",
   "version": "0.0.1",
-  "description": "Simplified version of the API Lomadee to provide its product base and offers.",
+  "description": "Simplified version of the API Lomadee to provide its products and offers.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
