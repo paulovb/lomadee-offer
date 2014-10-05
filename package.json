@@ -1,0 +1,37 @@
+{
+  "name": "lomadee-offer",
+  "version": "0.0.1",
+  "description": "Simplified version of the API Lomadee to provide its product base and offers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Paulo Vítor Bischof"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "nomnom": "^1.8.0",
+    "superagent": "^0.18.2",
+    "underscore": "^1.6.0"
+  },
+  "keywords": [
+    "buscape",
+    "lomadee",
+    "offers",
+    "affiliate"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulovb/lomadee-offer.git"
+  },
+  "bin": {
+    "lomadee-offer": "./bin.js"
+  },
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/paulovb/lomadee-offer/issues"
+  },
+  "_id": "lomadee-offer@0.0.1",
+  "_from": "lomadee-offer@"
+}
