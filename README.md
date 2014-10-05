@@ -68,4 +68,5 @@ lomadee('test')
 
 ## LICENSE
 
-MIT
+The MIT License (MIT)
+Copyright (c) 2014 Paulo Vítor Bischof, Based on the "buscape-lookup" of Adam Rudd.
