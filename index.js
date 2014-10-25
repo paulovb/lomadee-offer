@@ -85,7 +85,7 @@ Lomadee.prototype.done = function (cb) {
       if (err) return cb(err);
       // No products found
       if (!res.body.offer) res.body.offer = [];
-
+      
       // Format results
       var formatted = format(res.body.offer);
 
@@ -110,15 +110,16 @@ var format = function (offers) {
       , shortname = p.offershortname
       , price = p.price.value
       , currency = p.price.currency.abbreviation
-      , thumbnail = p.thumbnail.url
+      , thumbnail = (_.extend({},p.thumbnail).hasOwnProperty('url') ? p.thumbnail.url : '')
       , link = productLink(p.links)
       , coupon = p.seller.coupon.id
+      , sellername = p.seller.sellerName
       , sellerlink = sellerThumbnail(p.seller.links)
-      , sellerthumbnail = p.seller.thumbnail.url
+      , sellerthumbnail = (_.extend({},p.seller.thumbnail).hasOwnProperty('url') ? p.seller.thumbnail.url : '')
       , id = p.id;
 
     // Filter unusable results
-    if (!p || !name || !price || !link) return null;
+    if (!p || !name || !price || !link || !thumbnail || !sellername) return null;
 
     return {
       name: name,
@@ -128,6 +129,7 @@ var format = function (offers) {
       thumbnail: thumbnail,
       url: link,
       coupon: coupon,
+      sellername: sellername,
       sellerlink: sellerlink,
       sellerthumbnail: sellerthumbnail,
       id: id

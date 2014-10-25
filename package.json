@@ -1,6 +1,6 @@
 {
   "name": "lomadee-offer",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Simplified version of the API Lomadee to provide its products and offers.",
   "main": "index.js",
   "scripts": {
