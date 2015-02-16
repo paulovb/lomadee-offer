@@ -4,6 +4,8 @@ lomadee-offer
 
 Simplified version of the API Lomadee to provide its products and offers. Version for NodeJS.
 
+[![Build Status](https://travis-ci.org/paulovb/lomadee-offer.svg)](https://travis-ci.org/paulovb/lomadee-offer)
+
 ## Dependencies
 
 * [superagent](http://github.com/visionmedia/superagent)
